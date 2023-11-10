@@ -77,7 +77,6 @@ header {
 
 #cont-supreme {
     margin-top: 100px;
-    width: 100%;
     margin-left: 0;
     display: flex;
 }
@@ -86,6 +85,7 @@ header {
 
 #nav-right {
     width: 60px;
+    box-sizing: border-box;
     background-color: rgb(13, 13, 51);
     background-image: url("../img/sidebar-bg.png");
     height: calc(100vh - 100px);
@@ -121,18 +121,16 @@ header {
     }
 }
 
-#main-cont {
-    background-color: rgb(250, 245, 239);
+.main-container {
+    width: calc(100vw - 60px);
 }
 
 /* Sezione Top-Bar  */
 
-#top-bar {
-    width: calc(100vw - 60px);
-}
+
 
 @media all and (min-width:992px) {
-    #top-bar {
+    .main-container {
         width: calc(100vw - 180px);
     }
     #nav-right {
