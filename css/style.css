@@ -19,6 +19,12 @@ header {
     background-color: white;
 }
 
+/* Dropdown menu  */
+
+.bell:hover .dropdown{
+    display: block;
+}
+
 /* Stili della NAV  */
 
 #top-nav {
@@ -72,7 +78,7 @@ header {
     }
 }
 
-#bell {
+#bell a {
     color: rgb(145, 145, 10);
 }
 
@@ -186,7 +192,7 @@ main {
 }
 
 #top-bar {
-    background-color: rgb(165, 165, 255);
+    background-color: rgb(69, 69, 221);
 }
 
 @media all and (min-width:1200px) {
