@@ -123,7 +123,6 @@ header {
 }
 
 .main-container, #top-bar {
-    width: calc(100vw - 60px);
     box-sizing: border-box;
 }
 
@@ -131,21 +130,70 @@ header {
 
 /* Breadcrumb  */
 
+.card-top-bar, .breadcrumb-item {
+    color: white;
+    text-decoration: none;
+}
+.card-top-bar {
+    padding: 5px;
+    box-sizing: border-box;
+}
+.labels {
+    background-color: rgb(49, 49, 252);
+    border-radius: 8px;
+}
+
+#add {
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.none {
+    display: none;
+}
+
+.breadcrumb li {
+    padding-left: 8px;
+}
 .col-sm-12.col-md-4 nav {
     max-width: 100%;
 }
 
+#number-students {
+    font-size: 32px;
+    font-weight: 500;
+}
+
 
 @media all and (min-width:992px) {
-    .main-container, #top-bar {
-        width: calc(100vw - 180px);
-    }
+
     #nav-right {
         width:180px
     }
 }
 
-.col-sm-12 {
-    background-color: red;
-    height: 500px;
+#top-bar {
+    background-color: rgb(165, 165, 255);
 }
+
+@media all and (min-width:1200px) {
+    .none {
+        display: inline-block;
+    }
+    #plus {
+        display: none;
+    }
+}
+
+/* Sezione Table Prossime Classi  */
+
+#title-tab {
+    font-size: 30px;
+}
+
+.img-avatar {
+    max-width: 25px;
+}
+

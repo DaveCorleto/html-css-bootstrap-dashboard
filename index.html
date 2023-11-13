@@ -82,33 +82,221 @@
 
         <div class="container-fluid">
 
-            <section id="top-bar">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">Nuovo Studente</div>
+        
+            <div id="top-bar" class="row">
+                <div class="col-sm-12 col-md-4">
+                    
+                    <div class="card-top-bar d-flex align-items-center justify-content-
+                    ">
+                        <div>Nuovo Studente</div>
+                        <i id="add" class="fa-solid fa-plus"></i>
+                    </div>
+                
+                </div>
 
-                    <div class="col-sm-12 col-md-4">
-                        
-                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <div class="col-sm-12 col-md-4">
+
+                    <div class="card-top-bar">
+                    
+                        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb" class="d-flex align-items-center flex-wrap">
                             <ol class="breadcrumb">
 
-                              <li class="breadcrumb-item"><a href="#">Boolean</a></li>
+                                <li class="breadcrumb-item "><a href="#" class="text-white">Boolean</a></li>
 
-                              <li class="breadcrumb-item active" aria-current="page">Piano Blaze</li>
+                                <li class="breadcrumb-item active text-white labels" aria-current="page">Piano Blaze</li>
 
-                              <li class="breadcrumb-item active" aria-current="page">3 app</li>
+                                <li class="breadcrumb-item active text-white labels" aria-current="page">3 app</li>
+
+                                <li class="breadcrumb-item active text-white" aria-current="page">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </li>
+
+                                <li class="breadcrumb-item active text-white labels" id="plus" aria-current="page">
+                                    <i class="fa-solid fa-plus rounded-circle"></i>
+                                </li>
+
+                                <li class="breadcrumb-item active text-white labels none" aria-current="page">Boolean Mobile App</li>
+
+                                <li class="breadcrumb-item active text-white labels none" aria-current="page">Boolean web app</li>
+
+                                <li class="breadcrumb-item active text-white labels none" aria-current="page">Boolean blog app</li>
+
+
+
+
                             </ol>
-                          </nav>
+
+                        </nav>
+
                     </div>
-                    <div class="col-sm-12 col-md-4">Studenti Online</div>
-                </div>   
-            </section>
+
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    
+                    <div class="card-top-bar">
+                        Studenti Online negli ultimi 30 minuti
+                        <div id="number-students">125</div>
+                    </div>
+                
+                </div>
+            </div>   
+        
     
             <main">
                     <div class="container-fluid">
                         <div class="row d-flex">
                             <div class="col-sm-12 col-lg-8">
+
+                                <!-- Contiene la table con il numero delle classi  -->
+                                
                                 <div class="col-12">
-                                    Prossime classi
+
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+
+                                              <th id="title-tab" scope="col">Prossime Classi</th>
+                                             
+                                            </tr>
+                                          </thead>
+                                        <thead>
+                                          <tr>
+                                            <th class="fw-normal" scope="col">Nome</th>
+                                            <th class="fw-normal" scope="col">Data Inizio</th>
+                                            <th class="fw-normal" scope="col">Roi</th>
+                                            <th class="fw-normal" scope="col">Stato</th>
+                                            <th class="fw-normal" scope="col">Azioni</th>
+
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Riga 1  -->
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 75
+                                            </th>
+                                            <td>15 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Riga 2  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 76
+                                            </th>
+                                            <td>16 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Riga 3  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 77
+                                            </th>
+                                            <td>17 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-warning btn-sm">Process</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Riga 4  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 78
+                                            </th>
+                                            <td>18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+                                          
+                                          <!-- Riga 5  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 79
+                                            </th>
+                                            <td>19 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger btn-sm">Failed</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Riga 6  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 80
+                                            </th>
+                                            <td>20 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Riga 8  -->
+
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 78
+                                            </th>
+                                            <td>18 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success btn-sm">Done</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
+
+                                        </tbody>
+                                      </table>
                                 </div>
                                 <div class="col-12">
                                     FAQ
