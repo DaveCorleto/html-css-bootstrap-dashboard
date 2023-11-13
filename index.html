@@ -80,7 +80,7 @@
 
         <!-- Questo Container serve a raggruppare top-bar e main senza farli andare affianco -->
 
-        <div class="container-fluid">
+        <div id="tote" class="container-fluid">
 
         
             <div id="top-bar" class="row">
@@ -144,15 +144,15 @@
     
             <main">
                     <div class="container-fluid">
-                        <div class="row d-flex">
+                        <div class="row d-flex pt-3">
                             <div class="col-sm-12 col-lg-8">
 
                                 <!-- Contiene la table con il numero delle classi  -->
                                 
-                                <div class="col-12">
+                                <div class="col-12 border rounded p-3 mb-3">
 
-                                    <table class="table">
-                                        <thead>
+                                    <table class="table ">
+                                        <thead class="bg-light">
                                             <tr>
 
                                               <th id="title-tab" scope="col">Prossime Classi</th>
@@ -277,14 +277,30 @@
                                             </td>
                                           </tr>
 
+                                          <!-- Riga 7  -->
+                                          <tr>
+                                            <th class="fw-normal" scope="row">
+                                                <img class="img-avatar" src="img/class-avatar.jpg" alt="">
+                                                 Classe 81
+                                            </th>
+                                            <td>21 Feb 2021</td>
+                                            <td>20%</td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger btn-sm">Failed</button>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-pen text-body-tertiary p-1 border rounded"></i>
+                                                <i class="fa-solid fa-trash text-body-tertiary p-1 border rounded"></i>
+                                            </td>
+                                          </tr>
                                           <!-- Riga 8  -->
 
                                           <tr>
                                             <th class="fw-normal" scope="row">
                                                 <img class="img-avatar" src="img/class-avatar.jpg" alt="">
-                                                 Classe 78
+                                                 Classe 82
                                             </th>
-                                            <td>18 Feb 2021</td>
+                                            <td>22 Feb 2021</td>
                                             <td>20%</td>
                                             <td>
                                                 <button type="button" class="btn btn-success btn-sm">Done</button>
@@ -298,8 +314,44 @@
                                         </tbody>
                                       </table>
                                 </div>
-                                <div class="col-12">
-                                    FAQ
+
+                                <!-- Sezione FAQ  -->
+
+                                <div class="col-12 border rounded p-3 mb-3">
+                                    
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                                        <h2>F.A.Q.</h2>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Come posso aggiungere un nuovo studente?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Come posso accedere alle informazioni del mio account?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                          </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Posso usare questa dashboard da Mobile?
+                                            </button>
+                                          </h2>
+                                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                          </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                                 

@@ -80,6 +80,8 @@ header {
     margin-top: 100px;
     margin-left: 0;
     display: flex;
+    max-height: 100vh;
+    
 }
 
 /* Stili di Nav-right  */
@@ -122,9 +124,18 @@ header {
     }
 }
 
-.main-container, #top-bar {
+ #top-bar {
     box-sizing: border-box;
 }
+
+#tote {
+    max-height: calc(100vh - 100px);
+}
+
+main {
+    overflow-y: hidden;
+}
+
 
 /* Sezione Top-Bar  */
 
