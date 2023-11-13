@@ -208,3 +208,9 @@ main {
     max-width: 25px;
 }
 
+/* Todo  */
+
+.todo-text {
+    font-size: 12px;
+    line-height: 18px;
+}
