@@ -21,8 +21,9 @@ header {
 
 /* Dropdown menu  */
 
-.bell:hover .dropdown{
-    display: block;
+#bell {
+    margin-right: 10px;
+    color: rgb(145, 145, 10);
 }
 
 /* Stili della NAV  */
@@ -76,10 +77,6 @@ header {
         padding-left: 5px;
         padding-right: 5px; 
     }
-}
-
-#bell a {
-    color: rgb(145, 145, 10);
 }
 
 #cont-supreme {
