@@ -197,9 +197,7 @@ header {
 }
 
 @media all and (min-width:1200px) {
-    .none {
-        display: inline-block;
-    }
+
     #plus {
         display: none;
     }
