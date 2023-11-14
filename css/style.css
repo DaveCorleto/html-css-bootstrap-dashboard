@@ -192,6 +192,8 @@ header {
     }
 }
 
+/* Topbar  */
+
 #top-bar {
     background-color: rgb(69, 69, 221);
 }
@@ -204,6 +206,15 @@ header {
 }
 
 /* Sezione Table Prossime Classi  */
+
+th:hover {
+    background-color: whitesmoke;
+}
+
+tr:hover td{
+    background-color: whitesmoke;
+}
+
 
 #title-tab {
     font-size: 30px;
